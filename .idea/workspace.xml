@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30c4ca7d-1b4d-4ccd-a7e6-7ed155402b83" name="Default Changelist" comment="" />
+    <list default="true" id="30c4ca7d-1b4d-4ccd-a7e6-7ed155402b83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testDrivenClass/com/account/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testDrivenClass/com/account/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/testDrivenClass/com/account/AccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/testDrivenClass/com/account/AccountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/account/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/account/AccountTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +22,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1e2b1jkgsvi8XhZXPG0DiMcLbEb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,6 +38,7 @@
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Project" />
@@ -57,7 +69,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.accountCannotWithdrawWithWrongPinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest.accountCanWithdrawCashOnlyWithinBalanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testDrivenClass" />
       <extension name="coverage">
         <pattern>
@@ -67,7 +79,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.account" />
       <option name="MAIN_CLASS_NAME" value="com.account.AccountTest" />
-      <option name="METHOD_NAME" value="accountCannotWithdrawWithWrongPinTest" />
+      <option name="METHOD_NAME" value="accountCanWithdrawCashOnlyWithinBalanceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest.accountCanWithdrawOnlyWithinBalanceWithPinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testDrivenClass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.account" />
+      <option name="MAIN_CLASS_NAME" value="com.account.AccountTest" />
+      <option name="METHOD_NAME" value="accountCanWithdrawOnlyWithinBalanceWithPinTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.accountLimitIs100WithPinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest.accountLimitIs1000WithPinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testDrivenClass" />
       <extension name="coverage">
         <pattern>
@@ -99,23 +127,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.account" />
       <option name="MAIN_CLASS_NAME" value="com.account.AccountTest" />
-      <option name="METHOD_NAME" value="accountLimitIs100WithPinTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountTest.accountObjectCanReceiveDepositTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testDrivenClass" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.account.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.account" />
-      <option name="MAIN_CLASS_NAME" value="com.account.AccountTest" />
-      <option name="METHOD_NAME" value="accountObjectCanReceiveDepositTest" />
+      <option name="METHOD_NAME" value="accountLimitIs1000WithPinTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,10 +136,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="JUnit.AccountTest.accountObjectCanReceiveDepositTest" />
-        <item itemvalue="JUnit.AccountTest.accountCannotWithdrawWithWrongPinTest" />
+        <item itemvalue="JUnit.AccountTest.accountLimitIs1000WithPinTest" />
+        <item itemvalue="JUnit.AccountTest.accountCanWithdrawOnlyWithinBalanceWithPinTest" />
+        <item itemvalue="JUnit.AccountTest.accountCanWithdrawCashOnlyWithinBalanceTest" />
         <item itemvalue="JUnit.AccountTest.accountLimitIs1000Test" />
-        <item itemvalue="JUnit.AccountTest.accountLimitIs100WithPinTest" />
       </list>
     </recent_temporary>
   </component>
@@ -157,22 +169,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="196" key="GridCell.Tab.0.bottom" timestamp="1593628962091">
+    <state width="1237" height="196" key="GridCell.Tab.0.bottom" timestamp="1593691724554">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1593628962091" />
-    <state width="1237" height="196" key="GridCell.Tab.0.center" timestamp="1593628962091">
+    <state width="1237" height="196" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1593691724554" />
+    <state width="1237" height="196" key="GridCell.Tab.0.center" timestamp="1593691724553">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1593628962091" />
-    <state width="1237" height="196" key="GridCell.Tab.0.left" timestamp="1593628962091">
+    <state width="1237" height="196" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1593691724553" />
+    <state width="1237" height="196" key="GridCell.Tab.0.left" timestamp="1593691724553">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1593628962091" />
-    <state width="1237" height="196" key="GridCell.Tab.0.right" timestamp="1593628962091">
+    <state width="1237" height="196" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1593691724553" />
+    <state width="1237" height="196" key="GridCell.Tab.0.right" timestamp="1593691724554">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1593628962091" />
+    <state width="1237" height="196" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1593691724554" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1593533648493">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

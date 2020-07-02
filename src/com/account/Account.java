@@ -17,12 +17,18 @@ public class Account {
         if(amountToWithdraw <= accountBalance-1000){
             accountBalance -= amountToWithdraw;
         }
+        else{
+            System.out.println("minimum balance should be 1000");
+        }
     }
 
     public void withdrawWithPin(int pin, int amount) {
-        if (pin == 1234 && amount <= accountBalance-1000 ){
+        if (pin == 1234) {
             this.pin = pin;
-            accountBalance -= amount;
+            withdrawMoney(amount);
+        }
+        else{
+            System.out.println("Wrong pin");
         }
     }
 }

@@ -59,7 +59,7 @@ class AccountTest {
     @Test
     void accountCannotWithdrawWithWrongPinTest(){
         account.depositMoney(5000);
-        account.withdrawWithPin(4556, 1000);
+        account.withdrawWithPin(4556, 3000);
         assertEquals(5000, account.getAccountBalance());
     }
 
@@ -79,12 +79,12 @@ class AccountTest {
     @Test
     void accountLimitIs1000Test(){
         account.depositMoney(5000);
-        account.withdrawMoney(4000);
-        assertEquals(1000, account.getAccountBalance());
+        account.withdrawMoney(6000);
+        assertEquals(5000, account.getAccountBalance());
     }
 
     @Test
-    void accountLimitIs100WithPinTest(){
+    void accountLimitIs1000WithPinTest(){
         account.depositMoney(5000);
         account.withdrawWithPin(1234, 5000);
         assertEquals(5000, account.getAccountBalance());
