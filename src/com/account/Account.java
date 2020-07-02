@@ -18,7 +18,7 @@ public class Account {
             accountBalance -= amountToWithdraw;
         }
         else{
-            System.out.println("minimum balance should be 1000");
+            System.out.println("Insufficient balance");
         }
     }
 

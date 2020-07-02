@@ -89,4 +89,10 @@ class AccountTest {
         account.withdrawWithPin(1234, 5000);
         assertEquals(5000, account.getAccountBalance());
     }
+
+    @Test
+    void withdrawNotWithinBalancePrintsErrorMessage(){
+        account.depositMoney(5000);
+        account.withdrawWithPin(1234, 6000);
+    }
 }
