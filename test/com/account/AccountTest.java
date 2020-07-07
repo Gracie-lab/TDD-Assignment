@@ -44,55 +44,46 @@ class AccountTest {
 
     @Test
     void accountObjectCanWithdrawTest(){
+        account.setPin(1234);
         account.depositMoney(5000);
-        account.withdrawMoney(1000);
-        assertEquals(4000, account.getAccountBalance());
-    }
-
-    @Test
-    void accountCanWithrawWithPin(){
-        account.depositMoney(5000);
-        account.withdrawWithPin(1234, 1000);
+        account.withdrawMoney(1234, 1000);
         assertEquals(4000, account.getAccountBalance());
     }
 
     @Test
     void accountCannotWithdrawWithWrongPinTest(){
+        account.setPin(1234);
         account.depositMoney(5000);
-        account.withdrawWithPin(4556, 3000);
+        account.withdrawMoney(4556, 4000);
         assertEquals(5000, account.getAccountBalance());
     }
 
     @Test
-    void accountCanWithdrawOnlyWithinBalanceWithPinTest(){
+    void accountCanWithdrawOnlyWithinBalanceTest(){
+        account.setPin(1234);
         account.depositMoney(5000);
-        account.withdrawWithPin(1234, 6000);
-        assertEquals(5000, account.getAccountBalance());
-    }
-    @Test
-    void accountCanWithdrawCashOnlyWithinBalanceTest(){
-        account.depositMoney(5000);
-        account.withdrawMoney(6000);
+        account.withdrawMoney(1234, 6000);
         assertEquals(5000, account.getAccountBalance());
     }
 
     @Test
     void accountLimitIs1000Test(){
         account.depositMoney(5000);
-        account.withdrawMoney(6000);
-        assertEquals(5000, account.getAccountBalance());
-    }
-
-    @Test
-    void accountLimitIs1000WithPinTest(){
-        account.depositMoney(5000);
-        account.withdrawWithPin(1234, 5000);
+        account.setPin(1234);
+        account.withdrawMoney(1234, 5000);
         assertEquals(5000, account.getAccountBalance());
     }
 
     @Test
     void withdrawNotWithinBalancePrintsErrorMessage(){
         account.depositMoney(5000);
-        account.withdrawWithPin(1234, 6000);
+        account.withdrawMoney(1234, 6000);
+    }
+
+    @Test
+    void accountObjectCanChangePinTest(){
+        account.setPin(1234);
+        account.setPin(2468);
+        assertEquals(2468, account.getPin());
     }
 }

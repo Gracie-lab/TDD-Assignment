@@ -13,22 +13,25 @@ public class Account {
         return accountBalance;
     }
 
-    public void withdrawMoney(int amountToWithdraw) {
-        if(amountToWithdraw <= accountBalance-1000){
-            accountBalance -= amountToWithdraw;
-        }
-        else{
-            System.out.println("Insufficient balance");
-        }
+    public void setPin(int pin){
+        this.pin = pin;
     }
 
-    public void withdrawWithPin(int pin, int amount) {
-        if (pin == 1234) {
-            this.pin = pin;
-            withdrawMoney(amount);
+    public int getPin(){
+        return pin;
+    }
+
+    public void withdrawMoney(int pin, int amount) {
+        if (amount<=accountBalance-1000 && pin == this.pin) {
+            accountBalance-=amount;
         }
-        else{
+        if(amount>accountBalance-1000){
+            System.out.println("Insufficient balance");
+        }
+        if(pin != this.pin){
             System.out.println("Wrong pin");
         }
     }
+
+
 }

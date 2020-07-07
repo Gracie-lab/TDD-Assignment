@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30c4ca7d-1b4d-4ccd-a7e6-7ed155402b83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/testDrivenClass/com/account/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/testDrivenClass/com/account/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/testDrivenClass/com/account/AccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/testDrivenClass/com/account/AccountTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/account/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/account/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/account/AccountTest.java" afterDir="false" />
     </list>
@@ -13,13 +16,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1e2b1jkgsvi8XhZXPG0DiMcLbEb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -37,6 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../intellij/prime" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -49,7 +54,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest">
+  <component name="RunManager" selected="JUnit.AccountTest.accountLimitIs1000Test">
     <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testDrivenClass" />
       <extension name="coverage">
@@ -65,7 +70,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.accountCanWithdrawCashOnlyWithinBalanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest.accountCanWithrawTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testDrivenClass" />
       <extension name="coverage">
         <pattern>
@@ -75,13 +80,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.account" />
       <option name="MAIN_CLASS_NAME" value="com.account.AccountTest" />
-      <option name="METHOD_NAME" value="accountCanWithdrawCashOnlyWithinBalanceTest" />
+      <option name="METHOD_NAME" value="accountCanWithrawTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.accountCanWithdrawOnlyWithinBalanceWithPinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest.accountCannotWithdrawWithWrongPinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testDrivenClass" />
       <extension name="coverage">
         <pattern>
@@ -91,7 +96,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.account" />
       <option name="MAIN_CLASS_NAME" value="com.account.AccountTest" />
-      <option name="METHOD_NAME" value="accountCanWithdrawOnlyWithinBalanceWithPinTest" />
+      <option name="METHOD_NAME" value="accountCannotWithdrawWithWrongPinTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.accountLimitIs1000WithPinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest.accountObjectCanChangePin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testDrivenClass" />
       <extension name="coverage">
         <pattern>
@@ -123,7 +128,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.account" />
       <option name="MAIN_CLASS_NAME" value="com.account.AccountTest" />
-      <option name="METHOD_NAME" value="accountLimitIs1000WithPinTest" />
+      <option name="METHOD_NAME" value="accountObjectCanChangePin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="JUnit.AccountTest.accountLimitIs1000WithPinTest" />
-        <item itemvalue="JUnit.AccountTest.accountCanWithdrawOnlyWithinBalanceWithPinTest" />
-        <item itemvalue="JUnit.AccountTest.accountCanWithdrawCashOnlyWithinBalanceTest" />
         <item itemvalue="JUnit.AccountTest.accountLimitIs1000Test" />
+        <item itemvalue="JUnit.AccountTest.accountCannotWithdrawWithWrongPinTest" />
+        <item itemvalue="JUnit.AccountTest" />
+        <item itemvalue="JUnit.AccountTest.accountObjectCanChangePin" />
+        <item itemvalue="JUnit.AccountTest.accountCanWithrawTest" />
       </list>
     </recent_temporary>
   </component>
@@ -165,38 +170,54 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="196" key="GridCell.Tab.0.bottom" timestamp="1593691724554">
+    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1594159389749">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1593691724554" />
-    <state width="1237" height="196" key="GridCell.Tab.0.center" timestamp="1593691724553">
+    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1594159389749" />
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1593776860662">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1593691724553" />
-    <state width="1237" height="196" key="GridCell.Tab.0.left" timestamp="1593691724553">
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1593776860662" />
+    <state width="1237" height="196" key="GridCell.Tab.0.bottom" timestamp="1594159646130">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1593691724553" />
-    <state width="1237" height="196" key="GridCell.Tab.0.right" timestamp="1593691724554">
+    <state width="1237" height="196" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1594159646130" />
+    <state width="1237" height="196" key="GridCell.Tab.0.center" timestamp="1594159646130">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1593691724554" />
+    <state width="1237" height="196" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1594159646130" />
+    <state width="1237" height="196" key="GridCell.Tab.0.left" timestamp="1594159646130">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="196" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1594159646130" />
+    <state width="1237" height="196" key="GridCell.Tab.0.right" timestamp="1594159646130">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="196" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1594159646130" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1593533648493">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1593533648493" />
-    <state x="337" y="184" key="com.intellij.ide.util.TipDialog" timestamp="1593677292824">
+    <state x="337" y="184" key="com.intellij.ide.util.TipDialog" timestamp="1593816824832">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="337" y="184" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1593677292824" />
+    <state x="337" y="184" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1593816824832" />
     <state x="376" y="253" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593523604159">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="376" y="253" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.720@0.0.1280.720" timestamp="1593523604159" />
+    <state x="450" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594159303256">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="450" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1594159303256" />
     <state x="412" y="63" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1593523835017">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="412" y="63" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.720@0.0.1280.720" timestamp="1593523835017" />
+    <state x="91" y="0" key="new project wizard" timestamp="1593707947703">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1593707947703" />
     <state x="303" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1593607440997">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
